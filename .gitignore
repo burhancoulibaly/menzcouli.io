@@ -1,6 +1,9 @@
 #client id
 config/client_id.json
 
+#package-lock.json
+package-lock.json
+
 # Logs
 logs
 *.log

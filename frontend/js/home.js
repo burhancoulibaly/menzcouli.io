@@ -1,5 +1,4 @@
 const url = process.env.HOST || "http://localhost:3000/";
-console.log(process.env.HOST);
 
 let mosiacP5Data = {
     name: "mosaic-p5",
