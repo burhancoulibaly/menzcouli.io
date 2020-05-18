@@ -1,4 +1,4 @@
-const url = process.env.HOST || "http://localhost:3000/";
+const url = "http://www.menzcouli.io";
 
 let mosiacP5Data = {
     name: "mosaic-p5",

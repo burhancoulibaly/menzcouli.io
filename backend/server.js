@@ -1,4 +1,4 @@
-const HOST = '0.0.0.0';
+const HOST = 'www.menzcouli.io';
 
 const express = require('express'),
       app = express(),
