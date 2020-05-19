@@ -7,8 +7,7 @@ html, body{
     box-sizing: border-box;
 }
 .html-logo{
-    height: 12px;
-    width: 16px;
+    height: 16px;
 }
 .modal-open{
     overflow: hidden;
