@@ -52,7 +52,6 @@ console.log(`Server running http://${process.env.HOST || HOST} on port: ${proces
 // console.log(`Server running on port: ${process.env.PORT || 3000}`);
 
 app.get('/', async function(req,res){
-  console.log(oauth2Client);
   try {
     transporter = await getTransporter();
   }catch(error){
