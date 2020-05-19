@@ -50,7 +50,6 @@ console.log(`Server listening on port: ${process.env.PORT || 3000}`);
 console.log(server);
 
 app.get('/', async function(req,res){
-  console.log(oauth2Client);
   try {
     transporter = await getTransporter();
   }catch(error){
