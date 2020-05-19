@@ -46,7 +46,7 @@ app.use(bodyParser.urlencoded({
 
 let transporter = null;
 
-server.listen(process.env.PORT);
+server.listen(process.env.PORT || 3000);
 // server.listen(process.env.PORT || 3000);
 console.log(`Server running http://${process.env.HOST || HOST} on port: ${process.env.PORT || 3000}`);
 // console.log(`Server running on port: ${process.env.PORT || 3000}`);
