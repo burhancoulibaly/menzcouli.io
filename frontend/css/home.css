@@ -58,12 +58,12 @@ html, body{
 }
 #about-me .headshot img{
     object-fit: cover;
-    top: -60px;
+    top: -295px;
     left: -280px;
     position: relative;
-    transform: rotate(90deg) scale(.6);
+    transform: scale(.45);
     width: 800px;
-    height: 600px;
+    image-orientation: from-image;
 }
 #about-me .about-me-text{
     grid-column: 10 / 19;
@@ -465,9 +465,9 @@ html, body{
         height: 165px;
     }
     #about-me .headshot img{
-        top: -110%;
-        left: -141%;
-        transform: scale(0.4);
+        top: -226%;
+        left: -195%;
+        transform: scale(0.3);
     }
     #about-me .about-me-text{
         grid-column: 8 / 18;
