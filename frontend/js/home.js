@@ -13,7 +13,7 @@ let chatAppData = {
     link: "https://chat-app-socketio-mc.herokuapp.com/",
     img: "/assets/chat-app.png>",
     title: "<h3>Chat App</h3>",
-    paragraph: `<p>This project emulates a chat room, when a user enters they input the username they'd like, and are then put in a chat room. When the user writes something in the chat it shows their name and the message they sent, and a list on the right hand side populates with users in the room. To view the code for this project click the github below.</p>`,
+    paragraph: `<p>This project emulates a chat room. When a user enters, they input the username they'd like use and are then put in a chat room. When the user writes something in the chat it shows their name and the message they sent, and a list on the right hand side populates with users in the room. To view the code for this project click the github link below.</p>`,
     button: `<button class="btn btn-sm btn-outline-secondary" data-href="https://github.com/burhancoulibaly/chat-app" onclick="window.open(this.getAttribute('data-href')); return false;">github</button>`
 }
 let snakeGameData = {
@@ -21,7 +21,7 @@ let snakeGameData = {
     link: "https://snake-game-mc.herokuapp.com/",
     img: "/assets/snake-game.png",
     title: "<h3>Snake Game</h3>",
-    paragraph: `<p>This project is a snake game similar to the ones that would be found on old flip phones, that I created using javascript, and p5js (a clienct side library for creating graphics). The projects keeps track of the snakes location, its length, and whether or not its touching one of the four walls, as well as the food it eats using arrays and x and coordinates.</p>`,
+    paragraph: `<p>This project is a snake game similar to the ones that would be found on old flip phones, that I created using javascript, and p5js (a client side library for creating graphics). The projects keeps track of the snakes location, its length, whether or not its touching one of the four walls, as well as the food it eats using arrays and x and  y coordinates.</p>`,
     button: `<button class="btn btn-sm btn-outline-secondary" data-href="https://github.com/burhancoulibaly/Snake-Game" onclick="window.open(this.getAttribute('data-href')); return false;">github</button>`
 
 }
