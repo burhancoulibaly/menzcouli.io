@@ -5,7 +5,7 @@ let mosiacP5Data = {
     link: "https://mosaic-p5-demo.herokuapp.com/",
     img: "/assets/canvas.png",
     title: "<h3>Mosaic p5</h3>",
-    paragraph: `<p>This project takes an image input by a user, and set of images used to make a mosaic image using the first image the user put in the app. It was created using javascript, the google cloud platform api, and p5js. The above below is to a demo of the app hosted on heroku. below are links to the github main and demo brach.</p>`,
+    paragraph: `<p>This project takes an image input by a user, and set of images used to make a mosaic image using the first image the user put in the app. It was created using javascript, the google cloud platform api, and p5js. The link above is to a demo of the app hosted on heroku. below are links to the github main and demo brach.</p>`,
     button: `<button class="btn btn-sm btn-outline-secondary" data-href="https://github.com/burhancoulibaly/mosaic-p5-revised" onclick="window.open(this.getAttribute('data-href')); return false;">github: main</button> <button class="btn btn-sm btn-outline-secondary" data-href="https://github.com/burhancoulibaly/mosaic-p5-revised/tree/mosaic-p5-demo" onclick="window.open(this.getAttribute('data-href')); return false;">github: demo</button>`
 }
 let chatAppData = {
@@ -13,7 +13,7 @@ let chatAppData = {
     link: "https://chat-app-socketio-mc.herokuapp.com/",
     img: "/assets/chat-app.png>",
     title: "<h3>Chat App</h3>",
-    paragraph: `<p>This project emulates a chat room, when a user enters they input the username they'd like, then the put in a chat room. When the user writes something in the chat it shows their name and the message they sent, and a list on the right hand side populates with users in the room. To view the code for this project click the github below.</p>`,
+    paragraph: `<p>This project emulates a chat room, when a user enters they input the username they'd like, and are then put in a chat room. When the user writes something in the chat it shows their name and the message they sent, and a list on the right hand side populates with users in the room. To view the code for this project click the github below.</p>`,
     button: `<button class="btn btn-sm btn-outline-secondary" data-href="https://github.com/burhancoulibaly/chat-app" onclick="window.open(this.getAttribute('data-href')); return false;">github</button>`
 }
 let snakeGameData = {
@@ -21,7 +21,7 @@ let snakeGameData = {
     link: "https://snake-game-mc.herokuapp.com/",
     img: "/assets/snake-game.png",
     title: "<h3>Snake Game</h3>",
-    paragraph: `<p>This project is a snake game similar to the ones that would be found on old flip phones, that I created using javascript, and p5js (a clienct side library for creating graphics). The projects keeps track of the snakes location, its length whether or not its touching one of the four walls or the food it eats, using arrays and x and coordinates.</p>`,
+    paragraph: `<p>This project is a snake game similar to the ones that would be found on old flip phones, that I created using javascript, and p5js (a clienct side library for creating graphics). The projects keeps track of the snakes location, its length, and whether or not its touching one of the four walls, as well as the food it eats using arrays and x and coordinates.</p>`,
     button: `<button class="btn btn-sm btn-outline-secondary" data-href="https://github.com/burhancoulibaly/Snake-Game" onclick="window.open(this.getAttribute('data-href')); return false;">github</button>`
 
 }
