@@ -131,10 +131,14 @@ html, body{
     grid-auto-flow: row;
     justify-items: center;
 }
-#projects .project-container .snake-game{
+#projects .project-container .mock-transaction-app{
     display: grid;
     grid-auto-flow: row;
     justify-items: center;
+}
+#projects .project-container .mock-transaction-app img{
+    width: 700px;
+    height: 500px;
 }
 #projects .project-container > div .project-img{
     width: 450px;
@@ -333,6 +337,10 @@ html, body{
     transition: 
         brightness ease-in 150ms
 }
+.modal .modal-content .mock-transaction-app .project-img img{
+    width: 500px;
+    height: 400px;
+}
 .modal .modal-content .project-img:hover img{
     filter: brightness(50%);
 }
@@ -411,7 +419,7 @@ html, body{
     #projects .project-container .chat-app{
         grid-column: 15 / 22;
     }
-    #projects .project-container .snake-game{
+    #projects .project-container .mock-transaction-app{
         grid-column: 8 / 18;
         margin-top: 3rem;
     }
@@ -447,7 +455,7 @@ html, body{
         grid-column: 8 / 18;
         margin-top: 3rem;
     }
-    #projects .project-container .snake-game{
+    #projects .project-container .mock-transaction-app{
         grid-column: 8 / 18;
     }
     #projects .project-info{

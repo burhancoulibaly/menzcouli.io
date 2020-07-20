@@ -16,13 +16,13 @@ let chatAppData = {
     paragraph: `<p>This project emulates a chat room. When a user enters, they input the username they'd like use and are then put in a chat room. When the user writes something in the chat it shows their name and the message they sent, and a list on the right hand side populates with users in the room. To view the code for this project click the github link below.</p>`,
     button: `<button class="btn btn-sm btn-outline-secondary" data-href="https://github.com/burhancoulibaly/chat-app" onclick="window.open(this.getAttribute('data-href')); return false;">github</button>`
 }
-let snakeGameData = {
-    name: "snake-game",
-    link: "https://snake-game-mc.herokuapp.com/",
-    img: "/assets/snake-game.png",
-    title: "<h3>Snake Game</h3>",
-    paragraph: `<p>This project is a snake game similar to the ones that would be found on old flip phones, that I created using javascript, and p5js (a client side library for creating graphics). The projects keeps track of the snakes location, its length, whether or not its touching one of the four walls, as well as the food it eats using arrays and x and  y coordinates.</p>`,
-    button: `<button class="btn btn-sm btn-outline-secondary" data-href="https://github.com/burhancoulibaly/Snake-Game" onclick="window.open(this.getAttribute('data-href')); return false;">github</button>`
+let mockTransactionApp = {
+    name: "mock-transaction-app",
+    link: "https://youtu.be/HT42SA38hCg",
+    img: "/assets/mock-transaction-app.png",
+    title: "<h3>Mock Transaction App</h3>",
+    paragraph: `<p>This project is my mock transaction app, it allows users to make transaction which are posted on the front page, and on their accoutpage. This app uses Angular for the frontend, Nodejs for the backend, graphql, and mysql for the database storage and calls, and jwt auth token, and refresh tokens for authentication.</p>`,
+    button: `<button class="btn btn-sm btn-outline-secondary" data-href="https://github.com/burhancoulibaly/mock-transaction-app" onclick="window.open(this.getAttribute('data-href')); return false;">github</button>`
 
 }
 
@@ -36,8 +36,8 @@ $("#projects .project-img").on("click", function(event) {
         projectData = mosiacP5Data;
     }else if($(event.target)[0].attributes.alt.value.includes("chat-app")){
         projectData = chatAppData;
-    }else if($(event.target)[0].attributes.alt.value.includes("snake-game")){
-        projectData = snakeGameData;
+    }else if($(event.target)[0].attributes.alt.value.includes("mock-transaction-app")){
+        projectData = mockTransactionApp;
     }
 
     $(document.body).addClass("modal-open");
