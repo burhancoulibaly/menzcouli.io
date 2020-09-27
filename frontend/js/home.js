@@ -1,5 +1,5 @@
-const url = "https://www.menzcouli.io/";
-// const url = "http://localhost:3000/";
+// const url = "https://www.menzcouli.io/";
+const url = "http://localhost:3000/";
 
 let shortestPathData = {
     name: "shortest-path-app",
