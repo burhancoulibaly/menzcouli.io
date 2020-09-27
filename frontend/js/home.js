@@ -138,7 +138,7 @@ function sendEmailReq(emailObj){
                 resolve("Success");
             },
             error: function(error){
-                reject(`Error: ${error}`);
+                reject(`Error: `, error);
             }
         })
     })
