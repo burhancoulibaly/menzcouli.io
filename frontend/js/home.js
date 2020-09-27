@@ -1,11 +1,27 @@
 const url = "https://www.menzcouli.io/";
 
+let shortestPathData = {
+    name: "shortest-path-app",
+    link: "https://shortestpathapp.herokuapp.com/",
+    img: "/assets/shortestpaths.png",
+    title: "<h3>Shortest Path App</h3>",
+    paragraph: `<p>This is an app that visualizes path finding algorithms. Users can log in, create an account, or sign in as a guest user. Authenticated users can save, edit, delete, and rename maps, and all users can create maps and run any of the pathfinding algorithms on them. This app was created with react, node.js, graphql, and google firebase.</p>`,
+    button: `<button class="btn btn-sm btn-outline-secondary" data-href="https://github.com/burhancoulibaly/shortest_path" onclick="window.open(this.getAttribute('data-href')); return false;">github</button>`
+}
+let gameOfLifeData = {
+    name: "game-of-life-app",
+    link: "https://the-game-of-life-app.herokuapp.com/",
+    img: "/assets/gameoflife.png",
+    title: "<h3>Game Of Life App</h3>",
+    paragraph: `<p>This app visualizes Conway's Game of Life, users can draw active nodes onto a grid or randomnly generate them, and view the algorithm run on screen. Different settings can be set using the menu options for the app. This app was created using angular, and node.js</p>`,
+    button: `<button class="btn btn-sm btn-outline-secondary" data-href="https://github.com/burhancoulibaly/game-of-life" onclick="window.open(this.getAttribute('data-href')); return false;">github</button>`
+}
 let mosiacP5Data = {
     name: "mosaic-p5",
     link: "https://mosaic-p5-demo.herokuapp.com/",
     img: "/assets/canvas.png",
     title: "<h3>Mosaic p5</h3>",
-    paragraph: `<p>This project takes an image input by a user, and set of images used to make a mosaic image using the first image the user put in the app. It was created using javascript, the google cloud platform api, and p5js. The link above is to a demo of the app hosted on heroku. below are links to the github main and demo brach.</p>`,
+    paragraph: `<p>This project takes an image input by a user, and set of images used to make a mosaic image using the first image the user put in the app. It was created using javascript, the google cloud platform api, and p5js. The link above is to a demo of the app hosted on heroku. below are links to the github main and demo branch.</p>`,
     button: `<button class="btn btn-sm btn-outline-secondary" data-href="https://github.com/burhancoulibaly/mosaic-p5-revised" onclick="window.open(this.getAttribute('data-href')); return false;">github: main</button> <button class="btn btn-sm btn-outline-secondary" data-href="https://github.com/burhancoulibaly/mosaic-p5-revised/tree/mosaic-p5-demo" onclick="window.open(this.getAttribute('data-href')); return false;">github: demo</button>`
 }
 let chatAppData = {
@@ -38,6 +54,10 @@ $("#projects .project-img").on("click", function(event) {
         projectData = chatAppData;
     }else if($(event.target)[0].attributes.alt.value.includes("mock-transaction-app")){
         projectData = mockTransactionApp;
+    }else if($(event.target)[0].attributes.alt.value.includes("shortest-path-app")){
+        projectData = shortestPathData;
+    }else if($(event.target)[0].attributes.alt.value.includes("game-of-life-app")){
+        projectData = gameOfLifeData;
     }
 
     $(document.body).addClass("modal-open");

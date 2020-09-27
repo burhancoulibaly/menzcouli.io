@@ -8,7 +8,6 @@ const express = require('express'),
       OAuth2 = google.auth.OAuth2,
       nodemailer = require("nodemailer");
 
-
 //Google Auth
 const oauth2Client = new OAuth2(
       global.client_id.web.client_id,
@@ -17,7 +16,7 @@ const oauth2Client = new OAuth2(
     );
   
 oauth2Client.setCredentials({
-  refresh_token: "1//04HgmTyYyqbkgCgYIARAAGAQSNwF-L9IrSaxdGm_Mg5Tv07TYe8AXup6lIUs3lQpCT8-9-vPCOSsBNnXlfkfZmlhcCMi7ilJsTF4"
+  refresh_token: "1//04Pcpo8gZd9O5CgYIARAAGAQSNwF-L9IrqS078Xw7pmUWQRUexGbyQJYAR_agaWKt7LEtlfKPOPuZf7tTc9q6T3yyxujJtj7-XgU"
 });
 
 const accessToken = oauth2Client.getAccessToken()
@@ -93,8 +92,11 @@ async function getTransporter(){
             user: 'burhancoulibaly@gmail.com',
             clientId: global.client_id.web.client_id,
             clientSecret: global.client_id.web.client_secret,
-            refreshToken: "1//04HgmTyYyqbkgCgYIARAAGAQSNwF-L9IrSaxdGm_Mg5Tv07TYe8AXup6lIUs3lQpCT8-9-vPCOSsBNnXlfkfZmlhcCMi7ilJsTF4",
-            accessToken: "ya29.a0Ae4lvC1_MUmBnOxqgay5HapdIXxX9Jz6EjOnKc1W-n4Ij8UZ8u_lx08agRR1i2VmgEsfKxZI9wd3jDSuUvDggwDiH46V5XCocp9M3p2hB_eH6FOXl9nBEar26LSnQ3RSz9KCyfpd8u4eYG8gtTcoFzY6OiiKVYI21rM"
+            refreshToken: "1//04Pcpo8gZd9O5CgYIARAAGAQSNwF-L9IrqS078Xw7pmUWQRUexGbyQJYAR_agaWKt7LEtlfKPOPuZf7tTc9q6T3yyxujJtj7-XgU",
+            accessToken: accessToken
+        },
+        tls: {
+          rejectUnauthorized: false
         }
     });
 

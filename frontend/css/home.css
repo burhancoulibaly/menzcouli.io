@@ -55,6 +55,14 @@ html, body{
     height: 250px;
     grid-column: 9 / 10;
     border-radius: 140px;
+    background-color: dodgerblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#about-me .headshot h1{
+    font-family: 'Nixie One', cursive;
+    font-size: 115px;
 }
 #about-me .headshot img{
     object-fit: cover;
@@ -120,6 +128,16 @@ html, body{
     align-items: center;
     overflow: hidden;
     margin-bottom: 3rem;
+}
+#projects .project-container .shortest-path-app{
+    display: grid;
+    grid-auto-flow: row;
+    justify-items: center;
+}
+#projects .project-container .game-of-life-app{
+    display: grid;
+    grid-auto-flow: row;
+    justify-items: center;
 }
 #projects .project-container .mosaic-p5{
     display: grid;
@@ -294,7 +312,7 @@ html, body{
 }
 .modal .modal-content{
     width: 570px;
-    height: 525px;
+    height: 550px;
     border-radius: 3%;
     position: relative;
     background: white;;
@@ -408,25 +426,6 @@ html, body{
     transition:
         opacity ease-in-out 350ms;
 }
-
-@media screen and (max-width: 1400px) {
-    #projects .project-container{
-        grid-template-columns: repeat(24, 1fr);
-    }
-    #projects .project-container .mosaic-p5{
-        grid-column: 3 / 12;
-    }
-    #projects .project-container .chat-app{
-        grid-column: 15 / 22;
-    }
-    #projects .project-container .mock-transaction-app{
-        grid-column: 8 / 18;
-        margin-top: 3rem;
-    }
-    #projects .project-info{
-        margin: 1.5rem 2.5vw;
-    }
-}
 .close {
     width: 20px;
     height: 20px;
@@ -443,13 +442,47 @@ html, body{
     cursor: pointer;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 2400px) {
+    #projects .project-container{
+        grid-template-columns: repeat(24, 1fr);
+    }
+    #projects .project-container .shortest-path-app{
+        grid-column: 3 / 8;
+    }
+    #projects .project-container .game-of-life-app{
+        grid-column: 11 / 15;
+    }
+    #projects .project-container .mosaic-p5{
+        grid-column: 18 / 23;
+    }
+    #projects .project-container .chat-app{
+        grid-column: 7 / 11;
+        margin-top: 3rem;
+    }
+    #projects .project-container .mock-transaction-app{
+        grid-column: 15 / 19;
+        margin-top: 3rem;
+    }
+    #projects .project-info{
+        margin: 1.5rem 2.5vw;
+    }
+}
+
+@media screen and (max-width: 1550px) {
     #projects .project-container > div .project-img{
         width: 325px;
         height: 200px;
     }
+    #projects .project-container .shortest-path-app{
+        grid-column: 8 / 18;
+    }
+    #projects .project-container .game-of-life-app{
+        grid-column: 8 / 18;
+        margin-top: 3rem;
+    }
     #projects .project-container .mosaic-p5{
         grid-column: 8 / 18;
+        margin-top: 3rem;
     }
     #projects .project-container .chat-app{
         grid-column: 8 / 18;
