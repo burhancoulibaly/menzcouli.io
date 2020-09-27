@@ -10,7 +10,7 @@ const express = require('express'),
       nodemailer = require("nodemailer");
 
 // whitelist = ['http://localhost:3000'];
-whitelist = ['https://www.menzcouli.io', 'www.menzcouli.io', 'menzcouli.io'];
+whitelist = ['https://www.menzcouli.io', 'www.menzcouli.io', 'https://menzcouli.io', 'menzcouli.io'];
 
 let corsOptions = {
   origin: function (origin, callback) {
