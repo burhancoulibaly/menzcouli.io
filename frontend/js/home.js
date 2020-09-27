@@ -134,6 +134,9 @@ function sendEmailReq(emailObj){
                 email: emailObj
             }),
             contentType: "application/json; charset=utf-8",
+            headers: {
+                "Access-Control-Allow-Origin": "https://www.menzcouli.io"
+            },
             success: function(data){
                 resolve("Success");
             },
