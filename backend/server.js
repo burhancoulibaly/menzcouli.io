@@ -9,8 +9,8 @@ const express = require('express'),
       OAuth2 = google.auth.OAuth2,
       nodemailer = require("nodemailer");
 
-whitelist = ['*', "http://localhost:3000/"];
-// whitelist = ['https://www.menzcouli.io', 'www.menzcouli.io', 'https://menzcouli.io', 'menzcouli.io'];
+// whitelist = ['*', "http://localhost:3000"];
+whitelist = ['https://www.menzcouli.io', 'www.menzcouli.io', 'https://menzcouli.io', 'menzcouli.io', "http://localhost:3000"];
 
 let corsOptions = {
   origin: function (origin, callback) {
@@ -45,7 +45,7 @@ const html = path.resolve('./frontend/html'),
       assets = path.resolve('./assets');
 
 //Creating static files located on localhost
-// app.use(cors(corsOptions));
+app.use(cors(corsOptions));
 app.use('/html', express.static(html));
 app.use('/css', express.static(css));
 app.use('/js', express.static(js));
