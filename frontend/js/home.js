@@ -1,5 +1,3 @@
-// const url = "http://localhost:3000/";
-
 let shortestPathData = {
     name: "shortest-path-app",
     link: "https://shortestpathapp.herokuapp.com/",
@@ -114,6 +112,12 @@ async function sendEmail(e){
 
     try{
         await sendEmailReq(emailObj);
+
+        form.querySelector("input#name").value = "";
+        form.querySelector("input#email").value = "";
+        form.querySelector("input#subject").value = "";
+        form.querySelector("textarea#message").value = "";
+
     }catch(error){
         console.log(error);
     }
