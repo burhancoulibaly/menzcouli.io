@@ -63,7 +63,7 @@ html, body{
 #about-me .headshot h1{
     color: white;
     font-family: 'Nixie One', cursive;
-    font-size: 115px;
+    font-size: 90px;
 }
 #about-me .headshot img{
     object-fit: cover;
@@ -470,6 +470,10 @@ html, body{
 }
 
 @media screen and (max-width: 1550px) {
+    #about-me .headshot h1 {
+        font-size: 80px;
+    }
+
     #projects .project-container > div .project-img{
         width: 325px;
         height: 200px;
@@ -498,6 +502,10 @@ html, body{
 }
 
 @media screen and (max-width: 992px) {
+    #about-me .headshot h1 {
+        font-size: 60px;
+    }
+
     #about-me{
         margin: 1.5rem 0;
     }
