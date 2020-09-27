@@ -134,10 +134,14 @@ function sendEmailReq(emailObj){
                 email: emailObj
             }),
             contentType: "application/json; charset=utf-8",
+            headers: {
+                "Access-Control-Allow-Origin": "*"
+            },
             success: function(data){
                 resolve("Success");
             },
             error: function(error){
+                console.log(error)
                 reject(`Error: `, error);
             }
         })
