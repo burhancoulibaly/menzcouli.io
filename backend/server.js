@@ -10,8 +10,8 @@ const express = require('express'),
       OAuth2 = google.auth.OAuth2,
       nodemailer = require("nodemailer");
 
-console.log(global.client_id.web.client_id)
-console.log(global.client_id.web.client_secret)
+console.log(global.client_id.web.client_id ? global.client_id.web.client_id : "doesnt exist")
+console.log(global.client_id.web.client_secret ? global.client_id.web.client_secret : "doesnt exist")
 //Google Auth
 const oauth2Client = new OAuth2(
       global.client_id.web.client_id,
