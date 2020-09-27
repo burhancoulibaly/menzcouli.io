@@ -129,7 +129,7 @@ function sendEmailReq(emailObj){
     return new Promise((resolve, reject) =>{
         const path = "send-email"
         $.ajax({
-            url: url+path,
+            url: "www.menzcouli.io/"+path,
             type: 'POST',
             data: JSON.stringify({
                 email: emailObj
