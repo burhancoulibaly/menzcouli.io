@@ -1,3 +1,5 @@
+const HOST = 'www.menzcouli.io';
+
 const express = require('express'),
       app = express(),
       cors = require('cors'),
@@ -61,7 +63,9 @@ app.use(bodyParser.urlencoded({
 let transporter = null;
 
 server.listen(process.env.PORT || 3000);
-console.log(`Server listening on port: ${process.env.PORT || 3000}`);
+// server.listen(process.env.PORT || 3000);
+console.log(`Server running http://${process.env.HOST || HOST} on port: ${process.env.PORT || 3000}`);
+// console.log(`Server running on port: ${process.env.PORT || 3000}`);
 
 // console.log(server);
 
