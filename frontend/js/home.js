@@ -3,7 +3,7 @@ let shortestPathData = {
     link: "https://shortestpathapp.herokuapp.com/",
     img: "/assets/shortestpaths.png",
     title: "<h3>Shortest Path App</h3>",
-    paragraph: `<p>This is an app that visualizes path finding algorithms. Users can log in, create an account, or sign in as a guest user. Authenticated users can save, edit, delete, and rename maps, and all users can create maps and run any of the pathfinding algorithms on them. This app was created with react, node.js, graphql, and google firebase.</p>`,
+    paragraph: `<p>This is an app that visualizes path finding algorithms. Users can log in, create an account, or sign in as a guest user. Authenticated users can save, edit, delete, and rename maps, and all users can create maps and run any of the pathfinding algorithms on them. This app was created with react, node.js, graphql, and google firebase. App is hosted on heroku so it may take some time to start up.</p>`,
     button: `<button class="btn btn-sm btn-outline-secondary" data-href="https://github.com/burhancoulibaly/shortest_path" onclick="window.open(this.getAttribute('data-href')); return false;">github</button>`
 }
 let gameOfLifeData = {
@@ -11,7 +11,7 @@ let gameOfLifeData = {
     link: "https://the-game-of-life-app.herokuapp.com/",
     img: "/assets/gameoflife.png",
     title: "<h3>Game Of Life App</h3>",
-    paragraph: `<p>This app visualizes Conway's Game of Life, users can draw active nodes onto a grid or randomnly generate them, and view the algorithm run on screen. Different settings can be set using the menu options for the app. This app was created using angular, and node.js</p>`,
+    paragraph: `<p>This app visualizes Conway's Game of Life, users can draw active nodes onto a grid or randomnly generate them, and view the algorithm run on screen. Different settings can be set using the menu options for the app. This app was created using angular, and node.js. App is hosted on heroku so it may take some time to start up.</p>`,
     button: `<button class="btn btn-sm btn-outline-secondary" data-href="https://github.com/burhancoulibaly/game-of-life" onclick="window.open(this.getAttribute('data-href')); return false;">github</button>`
 }
 let mosiacP5Data = {
@@ -19,7 +19,7 @@ let mosiacP5Data = {
     link: "https://mosaic-p5-demo.herokuapp.com/",
     img: "/assets/canvas.png",
     title: "<h3>Mosaic p5</h3>",
-    paragraph: `<p>This project takes an image input by a user, and set of images used to make a mosaic image using the first image the user put in the app. It was created using javascript, the google cloud platform api, and p5js. The link above is to a demo of the app hosted on heroku. below are links to the github main and demo branch.</p>`,
+    paragraph: `<p>This project takes an image input by a user, and set of images used to make a mosaic image using the first image the user put in the app. It was created using javascript, the google cloud platform api, and p5js. The link above is to a demo of the app hosted on heroku. below are links to the github main and demo branch. App is hosted on heroku so it may take some time to start up.</p>`,
     button: `<button class="btn btn-sm btn-outline-secondary" data-href="https://github.com/burhancoulibaly/mosaic-p5-revised" onclick="window.open(this.getAttribute('data-href')); return false;">github: main</button> <button class="btn btn-sm btn-outline-secondary" data-href="https://github.com/burhancoulibaly/mosaic-p5-revised/tree/mosaic-p5-demo" onclick="window.open(this.getAttribute('data-href')); return false;">github: demo</button>`
 }
 let chatAppData = {
@@ -27,7 +27,7 @@ let chatAppData = {
     link: "https://chat-app-socketio-mc.herokuapp.com/",
     img: "/assets/chat-app.png>",
     title: "<h3>Chat App</h3>",
-    paragraph: `<p>This project emulates a chat room. When a user enters, they input the username they'd like use and are then put in a chat room. When the user writes something in the chat it shows their name and the message they sent, and a list on the right hand side populates with users in the room. To view the code for this project click the github link below.</p>`,
+    paragraph: `<p>This project emulates a chat room. When a user enters, they input the username they'd like use and are then put in a chat room. When the user writes something in the chat it shows their name and the message they sent, and a list on the right hand side populates with users in the room. To view the code for this project click the github link below. App is hosted on heroku so it may take some time to start up.</p>`,
     button: `<button class="btn btn-sm btn-outline-secondary" data-href="https://github.com/burhancoulibaly/chat-app" onclick="window.open(this.getAttribute('data-href')); return false;">github</button>`
 }
 let mockTransactionApp = {
@@ -35,7 +35,7 @@ let mockTransactionApp = {
     link: "https://youtu.be/HT42SA38hCg",
     img: "/assets/mock-transaction-app.png",
     title: "<h3>Mock Transaction App</h3>",
-    paragraph: `<p>This project is my mock transaction app, it allows users to make transaction which are posted on the front page, and on their accoutpage. This app uses Angular for the frontend, Nodejs for the backend, graphql, and mysql for the database storage and calls, and jwt auth token, and refresh tokens for authentication.</p>`,
+    paragraph: `<p>This project is my mock transaction app, it allows users to make transaction which are posted on the front page, and on their accoutpage. This app uses Angular for the frontend, Nodejs for the backend, graphql, and mysql for the database storage and calls, and jwt auth token, and refresh tokens for authentication. App is hosted on heroku so it may take some time to start up.</p>`,
     button: `<button class="btn btn-sm btn-outline-secondary" data-href="https://github.com/burhancoulibaly/mock-transaction-app" onclick="window.open(this.getAttribute('data-href')); return false;">github</button>`
 
 }

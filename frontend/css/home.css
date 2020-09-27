@@ -61,6 +61,7 @@ html, body{
     align-items: center;
 }
 #about-me .headshot h1{
+    color: white;
     font-family: 'Nixie One', cursive;
     font-size: 115px;
 }
@@ -312,7 +313,7 @@ html, body{
 }
 .modal .modal-content{
     width: 570px;
-    height: 550px;
+    height: 600px;
     border-radius: 3%;
     position: relative;
     background: white;;
