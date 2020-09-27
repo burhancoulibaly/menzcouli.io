@@ -35,7 +35,7 @@ let mockTransactionApp = {
     link: "https://youtu.be/HT42SA38hCg",
     img: "/assets/mock-transaction-app.png",
     title: "<h3>Mock Transaction App</h3>",
-    paragraph: `<p>This project is my mock transaction app, it allows users to make transaction which are posted on the front page, and on their accoutpage. This app uses Angular for the frontend, Nodejs for the backend, graphql, and mysql for the database storage and calls, and jwt auth token, and refresh tokens for authentication. App is hosted on heroku so it may take some time to start up.</p>`,
+    paragraph: `<p>This project is my mock transaction app, it allows users to make transaction which are posted on the front page, and on their accoutpage. This app uses Angular for the frontend, Nodejs for the backend, graphql, and mysql for the database storage and calls, and jwt auth token, and refresh tokens for authentication.</p>`,
     button: `<button class="btn btn-sm btn-outline-secondary" data-href="https://github.com/burhancoulibaly/mock-transaction-app" onclick="window.open(this.getAttribute('data-href')); return false;">github</button>`
 
 }
