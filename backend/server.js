@@ -9,8 +9,8 @@ const express = require('express'),
       OAuth2 = google.auth.OAuth2,
       nodemailer = require("nodemailer");
 
-// whitelist = ['http://localhost:3000'];
-whitelist = ['https://www.menzcouli.io', 'www.menzcouli.io', 'https://menzcouli.io', 'menzcouli.io'];
+whitelist = ['*', "http://localhost:3000/"];
+// whitelist = ['https://www.menzcouli.io', 'www.menzcouli.io', 'https://menzcouli.io', 'menzcouli.io'];
 
 let corsOptions = {
   origin: function (origin, callback) {
@@ -45,7 +45,7 @@ const html = path.resolve('./frontend/html'),
       assets = path.resolve('./assets');
 
 //Creating static files located on localhost
-app.use(cors(corsOptions));
+// app.use(cors(corsOptions));
 app.use('/html', express.static(html));
 app.use('/css', express.static(css));
 app.use('/js', express.static(js));
@@ -63,7 +63,7 @@ let transporter = null;
 server.listen(process.env.PORT || 3000);
 console.log(`Server listening on port: ${process.env.PORT || 3000}`);
 
-console.log(server);
+// console.log(server);
 
 app.get('/', async function(req,res){
   try {

@@ -1,4 +1,5 @@
 const url = "https://www.menzcouli.io/";
+// const url = "http://localhost:3000/";
 
 let shortestPathData = {
     name: "shortest-path-app",
@@ -135,7 +136,7 @@ function sendEmailReq(emailObj){
             }),
             contentType: "application/json; charset=utf-8",
             headers: {
-                "Access-Control-Allow-Origin": "https://www.menzcouli.io"
+                "Access-Control-Allow-Origin": "*"
             },
             success: function(data){
                 resolve("Success");
