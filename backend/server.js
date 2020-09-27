@@ -1,6 +1,5 @@
 const express = require('express'),
       app = express(),
-      cors = require('cors'),
       path = require('path'),
       bodyParser = require('body-parser'),
       server = require('http').createServer(app),
@@ -8,21 +7,6 @@ const express = require('express'),
       { google } = require("googleapis"),
       OAuth2 = google.auth.OAuth2,
       nodemailer = require("nodemailer");
-
-// whitelist = ['*', "http://localhost:3000"];
-whitelist = ['https://www.menzcouli.io', 'www.menzcouli.io', 'https://menzcouli.io', 'menzcouli.io', "http://localhost:3000"];
-
-let corsOptions = {
-  origin: function (origin, callback) {
-      console.log(origin)
-      if (whitelist.indexOf(origin) !== -1) {
-          callback(null, true)
-      } else {
-          callback(new Error('Not allowed by CORS'))
-      }
-  },
-  credentials: true
-}
 
 //Google Auth
 const oauth2Client = new OAuth2(
@@ -45,7 +29,6 @@ const html = path.resolve('./frontend/html'),
       assets = path.resolve('./assets');
 
 //Creating static files located on localhost
-app.use(cors(corsOptions));
 app.use('/html', express.static(html));
 app.use('/css', express.static(css));
 app.use('/js', express.static(js));

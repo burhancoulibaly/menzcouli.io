@@ -1,4 +1,3 @@
-const url = "www.menzcouli.io/";
 // const url = "http://localhost:3000/";
 
 let shortestPathData = {
