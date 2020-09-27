@@ -19,6 +19,7 @@
     "@popperjs/core": "^2.4.0",
     "body-parser": "^1.19.0",
     "bootstrap": "^4.4.1",
+    "cors": "^2.8.5",
     "express": "^4.17.1",
     "googleapis": "^51.0.0",
     "jquery": "^3.5.1",
